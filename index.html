@@ -1,35 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Lance Amundsen Research | PV-PP Framework</title>
+
 <style>
-.main-columns {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f6f8;
+  color: #222;
+}
+
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 45px 28px 60px;
+}
+
+h1 {
+  font-size: 2.6rem;
+  margin: 0 0 12px;
+  line-height: 1.15;
+}
+
+.subtitle {
+  font-size: 1.15rem;
+  color: #555;
+  max-width: 950px;
+  margin-bottom: 38px;
+}
+
+.columns {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 28px;
   align-items: start;
-  margin-top: 30px;
 }
 
 .column h2 {
-  margin-top: 0;
-  margin-bottom: 18px;
+  margin: 0 0 18px;
+  font-size: 2rem;
 }
 
 .column.benchmarks {
-  margin-top: 35px;
+  margin-top: 42px;
 }
 
 .column.papers {
-  margin-top: 70px;
+  margin-top: 84px;
 }
 
 .card {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 18px;
-  background: #fafafa;
-  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid #dcdcdc;
+  border-radius: 14px;
+  padding: 22px;
+  margin-bottom: 22px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.04);
 }
 
-@media (max-width: 950px) {
-  .main-columns {
+.card h3 {
+  margin: 0 0 14px;
+  font-size: 1.55rem;
+  line-height: 1.35;
+}
+
+.card p {
+  margin: 0;
+  line-height: 1.65;
+  font-size: 1.06rem;
+}
+
+.links {
+  margin-top: 18px;
+}
+
+.links a {
+  display: inline-block;
+  margin: 0 10px 10px 0;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: .98rem;
+}
+
+.links a.secondary {
+  background: #666;
+}
+
+.links a:hover {
+  opacity: .88;
+}
+
+footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  color: #666;
+  font-size: .95rem;
+}
+
+@media (max-width: 1100px) {
+  .columns {
     grid-template-columns: 1fr;
   }
 
@@ -38,70 +121,137 @@
     margin-top: 0;
   }
 }
+
 </style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<h1>Lance Amundsen Research for the Productive Value - Productive Power (PV-PP) Framework</h1>
+
+<p class="subtitle">
+Research hub for PV-PP framework work, benchmarks, papers, project notes, and applied demonstrations.
+</p>
 
 
+<div class="columns">
 
-<div class="main-columns">
+<!-- LEFT COLUMN -->
+<div class="column gpts">
 
-  <!-- LEFT COLUMN -->
-  <div class="column gpts">
-    <h2>Custom GPT's</h2>
+<h2>Custom GPT's</h2>
 
-    <div class="card">
-      <h3>PV-PP Agent Decision Layer</h3>
-      <p>
-        PV-PP Agent Decision Layer applies the framework to AI agents,
-        thresholds, corridors, governance, and execution.
-      </p>
-      <div class="links">
-        <a class="secondary" href="#">Project Page</a>
-        <a class="secondary" href="#">GPT</a>
-      </div>
-    </div>
-  </div>
+<div class="card">
+<h3>PV-PP Agent Decision Layer - START HERE for Overall Framework Information</h3>
 
+<p>
+PV-PP Agent Decision Layer applies the Productive Value / Productive Power framework to AI agents, tools, thresholds, corridors, governance, and disciplined decision flow from perception to execution.
+</p>
 
-
-  <!-- MIDDLE COLUMN -->
-  <div class="column benchmarks">
-    <h2>Benchmarks</h2>
-
-    <div class="card">
-      <h3>PV-PP Agent Decision Layer Demo</h3>
-      <p>Scalar vs PV-PP under compute degradation and recovery stress.</p>
-      <div class="links">
-        <a href="#">Code Repository</a>
-        <a class="secondary" href="#">Project Page</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <h3>Grenade Self-Sacrifice Benchmark</h3>
-      <p>Life-or-death sacrificial decision benchmark.</p>
-    </div>
-
-    <div class="card">
-      <h3>AI Gridworld Safe Benchmark</h3>
-      <p>Goal pursuit under hazards and safety constraints.</p>
-    </div>
-  </div>
-
-
-
-  <!-- RIGHT COLUMN -->
-  <div class="column papers">
-    <h2>Research Papers</h2>
-
-    <div class="card">
-      <h3>AA - Why It Works</h3>
-      <p>Structural explanation of AA recovery mechanisms.</p>
-    </div>
-
-    <div class="card">
-      <h3>The Alcohol Staircase</h3>
-      <p>Alcohol-use progression and recovery profile model.</p>
-    </div>
-  </div>
+<div class="links">
+<a class="secondary" href="https://amundsenlance.github.io/PV-PP-Agent-Decision-Layer/">Project Page</a>
+<a class="secondary" href="https://chatgpt.com/g/g-69c115a5b5a081918bb89c23f6b20446-pv-pp-agent-decision-engine/">GPT</a>
+</div>
+</div>
 
 </div>
+
+
+
+<!-- MIDDLE COLUMN -->
+<div class="column benchmarks">
+
+<h2>Benchmarks</h2>
+
+<div class="card">
+<h3>PV-PP Agent Decision Layer Demo</h3>
+
+<p>
+This demonstration compares scalar-scoring AI agents with a PV-PP Agent Decision Layer under enterprise incident conditions, including degraded compute capacity and corridor preservation.
+</p>
+
+<div class="links">
+<a href="https://github.com/AmundsenLance/pvpp-agent-decision-layer-demo.git">Code Repository</a>
+<a class="secondary" href="https://amundsenlance.github.io/pvpp-agent-decision-layer-demo/">Project Page</a>
+<a class="secondary" href="https://chatgpt.com/g/g-69c115a5b5a081918bb89c23f6b20446-pv-pp-agent-decision-engine/">Demo GPT</a>
+</div>
+</div>
+
+
+<div class="card">
+<h3>Grenade Self-Sacrifice Benchmark</h3>
+
+<p>
+A life-or-death benchmark comparing whether competing decision systems can justify self-sacrifice to save others under extreme threat.
+</p>
+
+<div class="links">
+<a href="https://github.com/AmundsenLance/pvpp-grenade-self-sacrifice-benchmark">Code Repository</a>
+<a class="secondary" href="https://amundsenlance.github.io/pvpp-grenade-self-sacrifice-benchmark/">Project Page</a>
+<a class="secondary" href="https://chatgpt.com/g/g-69cf21e9200c8191ab63ba1375849b95-pv-pp-grenade-self-sacrifice-benchmark-assistant/">Benchmark GPT</a>
+</div>
+</div>
+
+
+<div class="card">
+<h3>AI Gridworld Safe Benchmark</h3>
+
+<p>
+A grid-based benchmark testing whether AI systems can pursue goals while avoiding hazards, traps, unsafe shortcuts, and governance failures.
+</p>
+
+<div class="links">
+<a href="https://github.com/AmundsenLance/pvpp-gridworld-safe-benchmark.git">Code Repository</a>
+<a class="secondary" href="https://amundsenlance.github.io/pvpp-gridworld-safe-benchmark/">Project Page</a>
+</div>
+</div>
+
+</div>
+
+
+
+<!-- RIGHT COLUMN -->
+<div class="column papers">
+
+<h2>Research Papers</h2>
+
+<div class="card">
+<h3>Alcoholics Anonymous (AA) - Why It Works</h3>
+
+<p>
+A structural explanation of Alcoholics Anonymous as a practical recovery system using accountability, sponsorship, social reinforcement, and identity change.
+</p>
+
+<div class="links">
+<a href="https://amundsenlance.github.io/AA---Why-It-Works/" target="_blank">Read Paper</a>
+</div>
+</div>
+
+
+<div class="card">
+<h3>The Alcohol Staircase</h3>
+
+<p>
+A practical ladder model describing progression, deterioration, relapse risk, and recovery stages in alcohol misuse.
+</p>
+
+<div class="links">
+<a href="https://amundsenlance.github.io/The-Alcohol-Staircase/" target="_blank">Read Paper</a>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<footer>
+Maintained by Lance Amundsen. Published via GitHub Pages.
+</footer>
+
+</div>
+
+</body>
+</html>
