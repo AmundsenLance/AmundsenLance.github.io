@@ -1,127 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Lance Amundsen Research | PV-PP Framework</title>
 
 <style>
-* {
-  box-sizing: border-box;
+*{
+  box-sizing:border-box;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f5f6f8;
-  color: #222;
+body{
+  margin:0;
+  padding:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f3f4f6;
+  color:#1f1f1f;
 }
 
-.wrapper {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 45px 28px 60px;
+.wrapper{
+  max-width:1450px;
+  margin:0 auto;
+  padding:42px 28px 70px;
 }
 
-h1 {
-  font-size: 2.6rem;
-  margin: 0 0 12px;
-  line-height: 1.15;
+/* HERO */
+
+.hero{
+  background:linear-gradient(135deg,#111,#1e1e1e);
+  color:#fff;
+  border-radius:18px;
+  padding:42px;
+  box-shadow:0 18px 40px rgba(0,0,0,.18);
+  margin-bottom:34px;
 }
 
-.subtitle {
-  font-size: 1.15rem;
-  color: #555;
-  max-width: 950px;
-  margin-bottom: 38px;
+.hero h1{
+  margin:0 0 14px;
+  font-size:3rem;
+  line-height:1.1;
 }
 
-.columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 28px;
-  align-items: start;
+.hero p{
+  margin:0;
+  max-width:1050px;
+  color:#d7d7d7;
+  font-size:1.14rem;
+  line-height:1.7;
 }
 
-.column h2 {
-  margin: 0 0 18px;
-  font-size: 2rem;
+/* GRID */
+
+.columns{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:28px;
+  align-items:start;
 }
 
-.column.benchmarks {
-  margin-top: 42px;
+.column.benchmarks{
+  margin-top:42px;
 }
 
-.column.papers {
-  margin-top: 84px;
+.column.papers{
+  margin-top:84px;
 }
 
-.card {
-  background: #fff;
-  border: 1px solid #dcdcdc;
-  border-radius: 14px;
-  padding: 22px;
-  margin-bottom: 22px;
-  box-shadow: 0 8px 20px rgba(0,0,0,.04);
+.column h2{
+  margin:0 0 18px;
+  font-size:2rem;
+  padding-bottom:8px;
+  border-bottom:3px solid #111;
 }
 
-.card h3 {
-  margin: 0 0 14px;
-  font-size: 1.55rem;
-  line-height: 1.35;
+/* CARD */
+
+.card{
+  position:relative;
+  background:#fff;
+  border-radius:16px;
+  padding:24px;
+  margin-bottom:22px;
+  box-shadow:0 10px 24px rgba(0,0,0,.06);
+  border-top:5px solid #111;
+  transition:all .18s ease;
 }
 
-.card p {
-  margin: 0;
-  line-height: 1.65;
-  font-size: 1.06rem;
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 18px 30px rgba(0,0,0,.10);
 }
 
-.links {
-  margin-top: 18px;
+.card h3{
+  margin:0 0 14px;
+  font-size:1.45rem;
+  line-height:1.35;
 }
 
-.links a {
-  display: inline-block;
-  margin: 0 10px 10px 0;
-  padding: 10px 14px;
-  border-radius: 8px;
-  background: #111;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: .98rem;
+.card p{
+  margin:0;
+  line-height:1.68;
+  color:#444;
+  font-size:1.03rem;
 }
 
-.links a.secondary {
-  background: #666;
+/* BADGE */
+
+.badge{
+  position:absolute;
+  top:14px;
+  right:14px;
+  background:#d62828;
+  color:#fff;
+  font-size:.72rem;
+  font-weight:bold;
+  padding:5px 9px;
+  border-radius:999px;
+  letter-spacing:.04em;
+  box-shadow:0 4px 10px rgba(214,40,40,.28);
 }
 
-.links a:hover {
-  opacity: .88;
+/* LINKS */
+
+.links{
+  margin-top:18px;
 }
 
-footer {
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px solid #ddd;
-  color: #666;
-  font-size: .95rem;
+.links a{
+  display:inline-block;
+  margin:0 10px 10px 0;
+  padding:10px 14px;
+  border-radius:8px;
+  background:#111;
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:.96rem;
 }
 
-@media (max-width: 1100px) {
-  .columns {
-    grid-template-columns: 1fr;
-  }
-
-  .column.benchmarks,
-  .column.papers {
-    margin-top: 0;
-  }
+.links a.secondary{
+  background:#666;
 }
 
+.links a:hover{
+  opacity:.88;
+}
+
+/* FOOTER */
+
+footer{
+  margin-top:38px;
+  padding-top:20px;
+  border-top:1px solid #d8d8d8;
+  color:#666;
+  font-size:.95rem;
+}
+
+/* MOBILE */
+
+@media (max-width:1150px){
+
+.columns{
+  grid-template-columns:1fr;
+}
+
+.column.benchmarks,
+.column.papers{
+  margin-top:0;
+}
+
+.hero h1{
+  font-size:2.35rem;
+}
+
+.hero{
+  padding:28px;
+}
+
+}
 </style>
 </head>
 
@@ -129,108 +186,99 @@ footer {
 
 <div class="wrapper">
 
-<h1>Lance Amundsen R&D for the Productive Value - Productive Power (PV-PP) Framework</h1>
+<div class="hero">
+<h1>Lance Amundsen Research & Development</h1>
 
-<p class="subtitle">
-Research hub for PV-PP framework work, benchmarks, papers, project notes, and applied demonstrations.
+<p>
+Research hub for the Productive Value–Productive Power (PV–PP) Framework, benchmarks, papers, applied GPT systems, and experimental decision architectures. PV–PP is a general bounded comparative framework in which scalar aggregation is treated as a restricted internal comparison regime rather than the full structure of rational choice.
 </p>
+</div>
 
-<p class="subtitle">
-The Productive Value–Productive Power (PV–PP) framework is a general bounded comparative decision architecture with scalar aggregation being a restricted internal comparison regime within that broader architecture.
-</p>
+
 
 <div class="columns">
 
-<!-- LEFT COLUMN -->
-<div class="column gpts">
+<!-- COLUMN 1 -->
+<div class="column">
 
 <h2>Custom GPT's</h2>
 
 <div class="card">
-<h3>PV-PP Agent Decision Layer - START HERE for Overall Framework Information</h3>
+<div class="badge">FLAGSHIP</div>
+<h3>PV-PP Agent Decision Layer</h3>
 <p>
-PV-PP Agent Decision Layer applies the Productive Value / Productive Power framework to AI agents, tools, thresholds, corridors, governance, and disciplined decision flow from perception to execution.
+Primary entry point for the full framework: thresholds, corridors, governance domains, perceived productive power, and structured action selection.
 </p>
 <div class="links">
-<a class="secondary" href="https://amundsenlance.github.io/PV-PP-Agent-Decision-Layer/">Project Page</a>
-<a class="secondary" href="https://chatgpt.com/g/g-69c115a5b5a081918bb89c23f6b20446-pv-pp-agent-decision-engine/">GPT</a>
+<a class="secondary" href="#">Project Page</a>
+<a href="#">GPT</a>
 </div>
 </div>
 
 <div class="card">
-  <h3>Substance Use</h3>
-  <p>
-    Substance Use Reflector is an AI-powered reflective tool that applies the Productive Value / Productive Power (PV-PP) framework to substance use, recovery risk, relapse patterns, behavioral incentives, and practical change strategies. It is designed to help users think more clearly about habits, consequences, pressures, and realistic paths toward improvement.
-  </p>
-  <div class="links">
-    <a class="secondary" href="https://amundsenlance.github.io/Substance-Use/">Project Page</a>
-    <a class="secondary" href="https://chatgpt.com/g/g-69de055374748191863c0bc91a6131d6-substance-use/">GPT</a>
-  </div>
-</div>  
+<div class="badge">NEW</div>
+<h3>Substance Use Reflector</h3>
+<p>
+Reflective tool for substance use, relapse patterns, incentives, behavioral traps, and realistic recovery paths.
+</p>
+<div class="links">
+<a class="secondary" href="#">Project Page</a>
+<a href="#">GPT</a>
+</div>
+</div>
 
 <div class="card">
-  <h3>Rethinking Mental Health</h3>
-
-  <p>
-    Rethinking Mental Health is an AI-powered exploration tool that applies the Productive Value / Productive Power (PV-PP) framework to stress, coping patterns, incentives, distorted self-assessment, recovery pathways, and practical strategies for more stable functioning.
-  </p>
-
-  <div class="links">
-    <a class="secondary" href="https://amundsenlance.github.io/Rethinking-Mental-Health/">Project Page</a>
-    <a class="secondary" href="https://chatgpt.com/g/g-69e3174ca914819199955897547a69b9-rethinking-mental-health">GPT</a>
-  </div>
+<div class="badge">NEW</div>
+<h3>Rethinking Mental Health</h3>
+<p>
+Mental health exploration tool focused on stress, coping systems, distorted self-assessment, and functional recovery paths.
+</p>
+<div class="links">
+<a class="secondary" href="#">Project Page</a>
+<a href="#">GPT</a>
+</div>
 </div>
 
-  
 </div>
 
 
 
-<!-- MIDDLE COLUMN -->
+<!-- COLUMN 2 -->
 <div class="column benchmarks">
 
 <h2>Benchmarks</h2>
 
 <div class="card">
+<div class="badge">LIVE</div>
 <h3>PV-PP Agent Decision Layer Demo</h3>
-
 <p>
-This demonstration compares scalar-scoring AI agents with a PV-PP Agent Decision Layer under enterprise incident conditions, including degraded compute capacity and corridor preservation.
+Enterprise compute incident benchmark comparing scalar optimization against corridor-preserving PV-PP logic.
 </p>
-
 <div class="links">
-<a href="https://github.com/AmundsenLance/pvpp-agent-decision-layer-demo.git">Code Repository</a>
-<a class="secondary" href="https://amundsenlance.github.io/pvpp-agent-decision-layer-demo/">Project Page</a>
-<a class="secondary" href="https://chatgpt.com/g/g-69c115a5b5a081918bb89c23f6b20446-pv-pp-agent-decision-engine/">Demo GPT</a>
+<a href="#">Repository</a>
+<a class="secondary" href="#">Project Page</a>
 </div>
 </div>
-
 
 <div class="card">
 <h3>Grenade Self-Sacrifice Benchmark</h3>
-
 <p>
-A life-or-death benchmark comparing whether competing decision systems can justify self-sacrifice to save others under extreme threat.
+Extreme-threat benchmark testing whether systems justify self-sacrifice to save others.
 </p>
-
 <div class="links">
-<a href="https://github.com/AmundsenLance/pvpp-grenade-self-sacrifice-benchmark">Code Repository</a>
-<a class="secondary" href="https://amundsenlance.github.io/pvpp-grenade-self-sacrifice-benchmark/">Project Page</a>
-<a class="secondary" href="https://chatgpt.com/g/g-69cf21e9200c8191ab63ba1375849b95-pv-pp-grenade-self-sacrifice-benchmark-assistant/">Benchmark GPT</a>
+<a href="#">Repository</a>
+<a class="secondary" href="#">Project Page</a>
 </div>
 </div>
-
 
 <div class="card">
 <h3>AI Gridworld Safe Benchmark</h3>
-
 <p>
-A grid-based benchmark testing whether AI systems can pursue goals while avoiding hazards, traps, unsafe shortcuts, and governance failures.
+Goal-seeking benchmark under hazards, traps, unsafe shortcuts, and governance constraints.
 </p>
-
 <div class="links">
-<a href="https://github.com/AmundsenLance/pvpp-gridworld-safe-benchmark.git">Code Repository</a>
-<a class="secondary" href="https://amundsenlance.github.io/pvpp-gridworld-safe-benchmark/">Project Page</a>
+<a href="#">Repository</a>
+<a class="secondary" href="#">Project Page</a>
 </div>
 </div>
 
@@ -238,62 +286,60 @@ A grid-based benchmark testing whether AI systems can pursue goals while avoidin
 
 
 
-<!-- RIGHT COLUMN -->
+<!-- COLUMN 3 -->
 <div class="column papers">
 
 <h2>Research Papers</h2>
 
-
 <div class="card">
+<div class="badge">NEW PAPER</div>
 <h3>Addiction</h3>
 <p>
-A research paper examining addiction as compulsive reentry into damaging behavioral paths, with emphasis on false recovery corridors that appear promising but repeatedly lead back to relapse and instability.
+Addiction as compulsive reentry into damaging paths through false recovery corridors.
 </p>
 <div class="links">
-<a href="https://amundsenlance.github.io/Addiction/" target="_blank">Read Paper</a>
+<a href="#">Read Paper</a>
 </div>
 </div>
 
-
-  
 <div class="card">
-<h3>Alcoholics Anonymous (AA) - Why It Works</h3>
+<div class="badge">NEW PAPER</div>
+<h3>Grenade Self-Sacrifice</h3>
 <p>
-A structural explanation of Alcoholics Anonymous as a practical recovery system using accountability, sponsorship, social reinforcement, and identity change.
+On the non-necessity of scalar aggregation in a bounded crisis case.
 </p>
 <div class="links">
-<a href="https://amundsenlance.github.io/AA---Why-It-Works/" target="_blank">Read Paper</a>
+<a href="#">Read Paper</a>
 </div>
 </div>
 
+<div class="card">
+<h3>AA - Why It Works</h3>
+<p>
+Structural account of AA as a recovery system driven by accountability, sponsorship, and identity change.
+</p>
+<div class="links">
+<a href="#">Read Paper</a>
+</div>
+</div>
 
 <div class="card">
 <h3>The Alcohol Staircase</h3>
 <p>
-A practical ladder model describing progression, deterioration, relapse risk, and recovery stages in alcohol misuse.
+Profile ladder of deterioration, relapse exposure, and recovery stages in alcohol misuse.
 </p>
 <div class="links">
-<a href="https://amundsenlance.github.io/The-Alcohol-Staircase/" target="_blank">Read Paper</a>
+<a href="#">Read Paper</a>
 </div>
 </div>
 
-<div class="card">
-  <h3>Grenade Self-Sacrifice</h3>
-  <p>
-    A research paper examining whether scalar aggregation is necessary for rational decision selection in a bounded crisis scenario, using grenade self-sacrifice as a benchmark case for governing critical need and non-scalar choice.
-  </p>
-  <div class="links">
-    <a href="https://amundsenlance.github.io/Grenade-Self-Sacrifice/" target="_blank">Read Paper</a>
-  </div>
-</div>
-  
 </div>
 
 </div>
 
 
 <footer>
-Maintained by Lance Amundsen. Published via GitHub Pages.
+Maintained by Lance Amundsen. Published with GitHub Pages.
 </footer>
 
 </div>
